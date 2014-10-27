@@ -1,0 +1,82 @@
+/*
+ * Additional CSS for Hyde-X
+ */
+
+.posts {
+  list-style: none;
+}
+
+#serieslist {
+    float: right;
+}
+
+a.tag {
+    padding-left: .5rem;
+    padding-right: .5rem;
+    background-color: #0089CF;
+    color: white;
+    border-radius: 3px;
+}
+
+a.category {
+    padding-left: .5rem;
+    padding-right: .5rem;
+    background-color: #0DB14B;
+    color: white;
+    border-radius: 3px;
+}
+
+a.series {
+    padding-left: .5rem;
+    padding-right: .5rem;
+    background-color: #F7B813;
+    color: white;
+    border-radius: 3px;
+}
+
+.codelink {
+    padding: 0rem .3rem;
+    background: transparent;
+    font-size: 100%;
+    font-family: "Courier New", Courier, monospace;
+}
+
+code {
+    padding: 0rem .3rem;
+    background: transparent;
+    font-size: 100%;
+    color: #0DB14B;
+}
+
+pre code {
+    font-size: .65rem !important;
+}
+
+.rainbow {
+    font-size: .65rem;
+    font-family: "Courier New", Courier, monospace;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+.rainbow tr {
+    background-color: transparent;
+}
+.rainbow .line:hover {
+    /*background-color: #171b1c;*/
+}
+.rainbow .line:hover .line-number {
+   /*background-color: #101313;*/
+}
+.rainbow .line .line-number {
+    text-align: right;
+    /*background-color: #1b2022;*/
+    padding-left: 0.8em;
+    padding-right: 0.8em;
+}
+.rainbow .line .line-number:before {
+    content: attr(data-line-number);
+}
+.rainbow .line .line-code {
+    padding-left: 1em;
+    width: 100%;
+}
