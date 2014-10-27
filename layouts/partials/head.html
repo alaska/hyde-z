@@ -17,6 +17,11 @@
   {{ if isset .Site.Params "highlight" }}<link rel="stylesheet" href="{{ .Site.BaseUrl }}/css/highlight/{{ .Site.Params.highlight }}.css">{{ end }}
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
   <link rel="stylesheet" href="{{ .Site.BaseUrl }}/css/hyde-z.css">
+  {{ if isset .Site.Params "precss" }}
+    {{ range .Site.Params "precss" }}
+      <link rel="stylesheet" href="{{ .Site.BaseUrl }}/css/{{ . }}">
+    {{ end }}
+  {{ end }}
 
   <!-- Icons -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
