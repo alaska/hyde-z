@@ -1,5 +1,7 @@
-Hyde-X
+Hyde-Z
 ======
+
+Modified [Hyde-X](https://github.com/zyro/hyde-x) theme to use rainbow.js and support line numbers.
 
 Enhanced port of the Jekyll "[Hyde](https://github.com/poole/hyde)" theme to the Hugo site generator. Check below for a list of enhancements.
 
