@@ -1,10 +1,36 @@
 {{ partial "head.html" . }}
 <div class="content container">
   <div class="post">
+    {{ if isset .Params "series" }}
+    <div id="serieslist">
+      (part of a series on
+      {{ range .Params.series }}
+        <a class = "series" href="/series/{{ . | urlize }}">{{ . }}</a>
+      {{ end }}
+      )
+    </div>
+    {{ end }}
     <h1>{{ .Title }}</h1>
+
+
     <span class="post-date">{{ .Date.Format "Jan 2, 2006" }} &middot; {{ .ReadingTime }} minute read{{ if .Site.DisqusShortname }} &middot; <a href="{{ .Permalink }}#disqus_thread">Comments</a>{{ end }}</span>
     {{ .Content }}
   </div>
+  {{ if isset .Params "categories" }}
+  <div id="categorylist">Categories:
+        {{ range .Params.categories }}
+          <a class ="category" href="/categories/{{ . | urlize }}">{{ . }}</a>
+        {{ end }}
+    </div>
+  {{ end }}
+  {{ if isset .Params "tags" }}
+    <div id="taglist">Tags:
+        {{ range .Params.tags }}
+          <a class ="tag" href="/tags/{{ . | urlize }}">{{ . }}</a>
+        {{ end }}
+    </div>
+  {{ end }}
+
   {{ if .Site.DisqusShortname }}<div id="disqus_thread"></div>{{ end }}
 </div>
 
