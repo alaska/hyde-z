@@ -1,5 +1,7 @@
-{{ if isset .Site.Params "highlight" }}<script src="{{ .Site.BaseUrl }}/js/highlight.pack.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>{{ end }}
+{{ if isset .Site.Params "highlight" }}
+<script src="{{ .Site.BaseUrl }}/js/rainbow-custom.min.js"></script>
+<script src="{{ .Site.BaseUrl }}/js/rainbow.linenumbers.min.js"></script>
+{{ end }}
 {{ with .Site.Params.googleAnalytics }}
 <script>
   var _gaq=[['_setAccount','{{ . }}'],['_trackPageview']];

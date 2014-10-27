@@ -1,8 +1,11 @@
 <div class="sidebar">
   <div class="container sidebar-sticky">
     <div class="sidebar-about">
+        <a href="{{ .Site.BaseUrl }}"><div id="aitlogo"></div></a>
+      <!--
       {{ with .Site.Params.gravatarHash }}<img src="http://www.gravatar.com/avatar/{{ . }}?s=200" alt="gravatar">{{ end }}
       <h1>{{ .Site.Author.name }}</h1>
+      -->
       {{ with .Site.Params.tagline }}<p class="lead">{{ . }}</p>{{ end }}
     </div>
 
@@ -20,8 +23,10 @@
       {{ with .Site.Params.facebook }}<li class="sidebar-nav-item"><a href="{{ . }}">Facebook</a></li>{{ end }}
       {{ with .Site.Params.twitter }}<li class="sidebar-nav-item"><a href="{{ . }}">Twitter</a></li>{{ end }}
     </ul>
-
     <p>Copyright &copy; {{ .Now.Format "2006" }} <a href="{{ .Site.BaseUrl }}/license">License</a><br/>
-       Powered by <a href="http://hugo.spf13.com">Hugo</a> and <a href="https://github.com/zyro/hyde-x">Hyde-X</a></p>
+    Powered by <a href="http://hugo.spf13.com">Hugo</a></p>
+    <!--
+        EG 8==D
+    -->
   </div>
 </div>
