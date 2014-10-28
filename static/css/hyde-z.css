@@ -61,6 +61,9 @@ pre code {
 .rainbow tr {
     background-color: transparent;
 }
+td.line-number {
+    white-space: nowrap;
+}
 .rainbow .line:hover {
     /*background-color: #171b1c;*/
 }
