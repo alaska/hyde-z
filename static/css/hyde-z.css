@@ -42,6 +42,7 @@ a.series {
 }
 
 code {
+    font-family: "Courier New", Courier, monospace;
     padding: 0rem .3rem;
     background: transparent;
     font-size: 100%;
