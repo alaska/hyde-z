@@ -14,6 +14,22 @@
  * limitations under the License.
  */
 
+
+function codeLineApplyClass (classToApply, codeSelection, lines) {
+    var hlLines = lines.split(",");
+    for (var i = 0; i < hlLines.length; i++) {
+        document.querySelector(".code"+codeSelection+" .line-"+hlLines[i]+" .line-code").className=classToApply;
+    }
+}
+
+function hlCode (codeSelection, lines) {
+    codeLineApplyClass("line-code line-hover", codeSelection, lines);
+}
+
+function dehlCode (codeSelection, lines) {
+    codeLineApplyClass("line-code", codeSelection, lines);
+}
+
 // Only install the plugin if Rainbow is present and has been loaded
 if (window.Rainbow) window.Rainbow.linenumbers = (function(Rainbow) {
     /*
@@ -123,3 +139,5 @@ if (window.Rainbow) window.Rainbow.linenumbers = (function(Rainbow) {
         parent.appendChild(table);
     });
 })(window.Rainbow);
+
+
