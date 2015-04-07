@@ -121,5 +121,13 @@ if (window.Rainbow) window.Rainbow.linenumbers = (function(Rainbow) {
         // Clear the parent element and use the table in place of the <code> block
         parent.innerHTML = '';
         parent.appendChild(table);
+
+        if (parent.hasAttribute('pg-link')) {
+            var pglink = document.createElement("a");
+            pglink.className='pglink';
+            pglink.href=parent.getAttribute('pg-link');
+            parent.appendChild(pglink);
+        }
+
     });
 })(window.Rainbow);

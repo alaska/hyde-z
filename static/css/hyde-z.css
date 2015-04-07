@@ -34,23 +34,43 @@ a.series {
     border-radius: 3px;
 }
 
-.codelink {
-    padding: 0rem .3rem;
+a.codelink {
     background: transparent;
     font-size: 100%;
     font-family: "Courier New", Courier, monospace;
+}
+
+blockquote {
+    font-family: "Courier New", Courier, monospace;
+    font-size: .65rem;
+}
+
+pre {
+    position: relative;
 }
 
 code {
     font-family: "Courier New", Courier, monospace;
-    padding: 0rem .3rem;
+    padding: 0rem .2rem;
     background: transparent;
     font-size: 100%;
-    color: #0DB14B;
+    color: black;
 }
 
 pre code {
     font-size: .65rem !important;
+}
+
+a.pglink {
+    display: block;
+    background-image: url('/img/link-gopher.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: 10;
+    width: 22px;
+    height: 30px;
 }
 
 .rainbow {
@@ -77,3 +97,8 @@ td.line-number {
     padding-left: 0.8em;
     padding-right: 0.8em;
 }
+
+.footnotes {
+    font-size: .65rem;
+}
+
