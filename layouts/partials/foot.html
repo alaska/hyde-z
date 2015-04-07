@@ -1,6 +1,7 @@
 {{ if isset .Site.Params "highlight" }}
-<script src="{{ .Site.BaseUrl }}/js/rainbow-custom.min.js"></script>
-<script src="{{ .Site.BaseUrl }}/js/rainbow.linenumbers.js"></script>
+<script src="{{ .Site.BaseURL }}/js/rainbow-custom.min.js"></script>
+<script src="{{ .Site.BaseURL }}/js/rainbow.linenumbers.js"></script>
+<script src="{{ .Site.BaseURL }}/js/pg-link.js"></script>
 {{ end }}
 {{ with .Site.Params.googleAnalytics }}
 <script>
