@@ -85,11 +85,8 @@ pre .variable.global, pre .variable.class, pre .variable.instance {
     color: #839496; /* base0 */
 }
 
-.rainbow .line:hover {
+.rainbow .line-hover {
     background-color: #073642; /* base02 */
-}
-.rainbow .line:hover .line-number {
-   /*background-color: #101313;*/
 }
 .rainbow .line .line-number {
     background-color: #073642; /* base02 */

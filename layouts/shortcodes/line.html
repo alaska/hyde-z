@@ -1,0 +1,5 @@
+<!-- line -->
+{{ $sel := $.Page.Scratch.Get "codeNumber" }}
+{{ $line := .Get 0 }}
+<span onMouseOver="document.querySelector('.code{{ $sel }} .line-{{ $line }} .line-code').className='line-code line-hover'" onMouseOut="document.querySelector('.code{{ $sel }} .line-{{ $line }} .line-code').className='line-code'">{{ .Inner }}</span>
+<!-- line -->

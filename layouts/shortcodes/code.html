@@ -1,0 +1,8 @@
+<!-- code -->
+{{ $.Page.Scratch.Add "codeNumber" 1 }}
+{{ with .Get "name" }}<b>{{.}}</b>{{ end }}
+<pre><code{{ with .Get "lang" }} class="language-{{.}}" {{ end }} selection-name="code{{ $.Page.Scratch.Get "codeNumber" }}">{{ trim .Inner "\n" }}
+</code></pre>
+{{ with .Get "gh"}}<a href="{{.}}">github</a>{{ end }}
+{{ with .Get "pg"}}<a href="{{.}}">playground</a>{{ end }}
+<!-- code -->

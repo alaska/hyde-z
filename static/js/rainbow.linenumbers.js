@@ -86,9 +86,9 @@ if (window.Rainbow) window.Rainbow.linenumbers = (function(Rainbow) {
         }
 
         // Create a table wrapper
+        var selectionName = block.getAttribute('selection-name'); 
         var table = document.createElement('table');
-        table.className = 'rainbow';
-        table.setAttribute('data-language', block.getAttribute('data-language'));
+        table.className = 'rainbow ' + selectionName;
         
         // Split up the lines of the block
         var lines = this.splitLines(block);
@@ -121,13 +121,5 @@ if (window.Rainbow) window.Rainbow.linenumbers = (function(Rainbow) {
         // Clear the parent element and use the table in place of the <code> block
         parent.innerHTML = '';
         parent.appendChild(table);
-
-        if (parent.hasAttribute('pg-link')) {
-            var pglink = document.createElement("a");
-            pglink.className='pglink';
-            pglink.href=parent.getAttribute('pg-link');
-            parent.appendChild(pglink);
-        }
-
     });
 })(window.Rainbow);
