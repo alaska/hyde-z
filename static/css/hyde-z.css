@@ -190,6 +190,10 @@ a.goplayground {
     background-image: url('/img/link-gopher.png');
 }
 
+.line-link {
+    border-bottom: 1px dotted black;
+}
+
 .footnotes {
     font-size: .65rem;
 }
