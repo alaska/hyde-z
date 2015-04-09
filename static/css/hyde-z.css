@@ -163,8 +163,8 @@ a.goplayground {
 }
 
 .code-line-link {
+    cursor: url('/img/cursor-code-line-link.png'), n-resize;
     border-bottom: 1px dotted black;
-    cursor: n-resize;
 }
 
 .footnotes {
