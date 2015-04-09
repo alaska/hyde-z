@@ -18,6 +18,10 @@ pre.code, .highlight pre {
     padding: 10px;
     border: 1px solid #E1E1E8; }
 
+.highlight {
+    margin: 0px;
+}
+
 .codetable {
     border-spacing: 0;
     border-collapse: collapse;}
