@@ -164,6 +164,7 @@ a.goplayground {
 
 .code-line-link {
     border-bottom: 1px dotted black;
+    cursor: n-resize;
 }
 
 .footnotes {
