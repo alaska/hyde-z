@@ -1,93 +1,88 @@
-/**
- * Solarized Dark theme
+/* Pretty printing styles. Used with prettify.js.
  *
- * Adaptation of Solarized Dark from ethanschoonover.com/solarized
+ * This version is slight modified based on the original version.
  *
- * @author Ethan Schoonover
- * @author David Litmark
- * @version 1.0.0
+ * Name:    Stanley Ng
+ * Email:   stanleyhlng@googlegroups.com
+ * 
+ * Reference:
+ * http://code.google.com/p/google-code-prettify/source/browse/trunk/src/prettify.css
  */
-pre {
-    background: #002b36; /* base03 */
-    word-wrap: break-word;
-    margin: 0px;
+.pln {
+  color: #bd3613; }
+
+.str {
+  color: #269186; }
+
+.kwd {
+  color: #859900; }
+
+.com {
+  color: #586175;
+  font-style: italic; }
+
+.typ {
+  color: #b58900; }
+
+.lit {
+  color: #2aa198; }
+
+.pun {
+  color: #839496; }
+
+.opn {
+  color: #839496; }
+
+.clo {
+  color: #839496; }
+
+.tag {
+  color: #268bd2; }
+
+.atn {
+  color: #586175; }
+
+.atv {
+  color: #2aa198; }
+
+.dec {
+  color: #268bd2; }
+
+.var {
+  color: #268bd2; }
+
+.fun {
+  color: #FF0000; }
+
+/* Put a border around prettyprinted code snippets. */
+pre.code {
+    font-size: .65rem;
+    font-family: "Courier New", Courier, monospace;
+    background-color: #042029;
     padding: 10px;
-    color: #839496; /* base0 */
-    font-size: 14px;
-}
+    border: 1px solid #E1E1E8; }
 
-pre, code {
-    font-family: 'Monaco', courier, monospace;
-}
+.codetable {
+    border-spacing: 0;
+    border-collapse: collapse;}
 
-pre .comment {
-    color: #586e75; /* base01 */
-}
+.codetable-line {
+    padding-left: 1em;
+    width: 100%;}
 
-pre .constant {
-    color: #839496; /* base0 */
-}
+.codetable-line-hl {
+    background-color: #073642;}
 
-pre .constant.language {
-    color: #268bd2; /* blue */
-}
-
-pre .constant.regexp {
-    color: #2aa198; /* cyan */
-}
-
-pre .storage {
-    color: #268bd2; /* blue */
-}
-
-pre .string, pre .comment.docstring {
-    color: #2aa198; /* cyan */
-}
-
-pre .support.tag.script, pre .support.tag.style {
-    color: #2aa198; /* cyan */
-}
-
-pre .string.regexp {
-    color: #2aa198; /* cyan */
-}
-
-pre .string.regexp.open, pre .string.regexp.close {
-    color: #2aa198; /* cyan */
-}
-
-pre .keyword, pre .selector {
-    color: #859900; /* green */
-}
-
-pre .inherited-class {
-    font-style: italic;
-}
-
-pre .entity {
-    color: #b58900; /* yellow */
-}
-
-pre .support, *[data-language="c"] .function.call {
-    color: #859900; /* green */
-}
-
-pre .support.method {
-    color: #839496; /* base0 */
-}
-
-pre .support.property {
-    color: #839496; /* base0 */
-}
-
-pre .variable.global, pre .variable.class, pre .variable.instance {
-    color: #839496; /* base0 */
-}
-
-.rainbow .line-hover {
-    background-color: #073642; /* base02 */
-}
-.rainbow .line .line-number {
-    background-color: #073642; /* base02 */
-    color: #586e75; /* base01 */
-}
+.codetable-line-number {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    user-select: none;
+    text-align: right;
+    padding-left: 0.8em;
+    padding-right: 0.8em;
+    background-color: #073642;
+    color: #586e75;
+    white-space: nowrap;}

@@ -122,10 +122,6 @@ cite:before {
     color: #7a7a7a;
 }
 
-pre {
-    position: relative;
-}
-
 code {
     font-family: "Courier New", Courier, monospace;
     padding: 0rem .2rem;
@@ -134,41 +130,17 @@ code {
     color: black;
 }
 
-pre code {
-    font-size: .65rem !important;
-}
-
-.rainbow {
-    font-size: .65rem;
-    font-family: "Courier New", Courier, monospace;
-    border-spacing: 0;
-    border-collapse: collapse;
-}
-.rainbow tr {
-    background-color: transparent;
-}
-td.line-number {
-    white-space: nowrap;
-}
-.rainbow .line .line-number:before {
-    content: attr(data-line-number);
-}
-.rainbow .line .line-code {
-    padding-left: 1em;
-    width: 100%;
-}
-.rainbow .line .line-number {
-    text-align: right;
-    padding-left: 0.8em;
-    padding-right: 0.8em;
-}
-
 .code-footer {
     padding-bottom: 20px;
 }
 
-.code-label {
+.code-footer-content {
     float: right;
+    white-space: nowrap;
+}
+
+.code-label {
+    float:left;
     text-align: right;
     font-weight: bold;
     font-size: .65rem;
@@ -176,7 +148,7 @@ td.line-number {
 }
 
 a.extern_code {
-    float: right;
+    float:left;
     display: block;
     height: 16px;
     width: 16px;
@@ -190,7 +162,7 @@ a.goplayground {
     background-image: url('/img/link-gopher.png');
 }
 
-.line-link {
+.code-line-link {
     border-bottom: 1px dotted black;
 }
 
